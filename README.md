@@ -1,4 +1,4 @@
-## TO-DO APP
+## A FULL STACK TO-DO APP
 
 This project contains a simple to-do application.
 It has the following features:-
