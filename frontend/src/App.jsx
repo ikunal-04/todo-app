@@ -1,11 +1,21 @@
+import { useState } from 'react'
 import './App.css'
 import { CreateTodo } from './components/CreateTodo'
+import { Todos } from './components/Todos'
 
+//useeffect prevents us making the infinite calls to the backend.
 function App() {
+  const [todos, setTodos] = useState([]);
+
+  fetch("http://localhost:3000/todos").then(async (res) => {
+    const json = await res.json();
+    setTodos(json.todos); 
+  })
 
   return (
     <div>
-      hi there
+      <CreateTodo></CreateTodo>
+      <Todos todos={todos}></Todos>
     </div>
   )
 }
