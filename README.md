@@ -7,6 +7,16 @@ It has the following features:-
 - Anyone can see their existing todo's
 - Anyone can mark their todo's as done
 
+### Local changes
+
+`cd backend`
+`npm install`
+Then,
+`cd ..`
+`cd frontend`
+`npm install`
+This will install all the dependencies for the project.
+
 ### Todo's for the project
 
 - [x] Anyone can create a new todo.
