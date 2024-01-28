@@ -7,17 +7,43 @@ It has the following features:-
 - Anyone can see their existing todo's
 - Anyone can mark their todo's as done
 
-### Local changes
+## Installation Guide
 
-`cd backend`
-`npm install`
-Then,
-`cd ..`
-`cd frontend`
-`npm install`
-This will install all the dependencies for the project.
+### Requirements
+  - [Nodejs](https://nodejs.org/en/download)
+  - [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
+  
+Both should be installed and make sure mongodb is running.
 
-### Todo's for the project
+```shell
+git clone https://github.com/ikunal-04/todo-app.git
+cd todo-app
+```
+Now install the dependencies:
+
+```shell
+cd backend
+npm install
+cd ..
+cd frontend
+npm install
+```
+
+### Guide to run locally
+
+For Frontend.
+```shell
+cd frontend
+npm run dev
+```
+
+For Backend.
+```shell
+cd backend
+node index.js
+```
+
+## Features to be implemented.
 
 - [x] Anyone can create a new todo.
 - [x] Anyone can see their existing todo's.
